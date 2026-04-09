@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Train MNIST (uv)",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"mnist-train",
+				"--epochs",
+				"1",
+				"--batch-size",
+				"128"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
